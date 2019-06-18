@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<title>Sign Up</title>
+  <!--Links and scripts-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">  
+</head>
+
+<!--Body-->
+<body class="text-center">
+	<div class="container">
+
+<!--Block de 200%-->
+<div class="window" id="windowPG">
+	<!--Header-->
+  <div class="block1">
+		<header class="mb-auto">
+        <div class="inner">
+          <h3 class="float-left">Diana Castro Silva/MMI2/TD2</h3>
+            <nav class="nav nav-pills float-right">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hello!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How are you?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Always fine! :)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="fluidPage();" href="#">CLICK ME >></a>
+              </li>
+            </nav>
+        </div>
+    </header>
+
+	<!--Formulaire-->
+    <form class="form-signin">
+      <h1 class="mb-5 pt-5 font-weight-normal">Sign Up</h1>
+
+      <div class="alert alert-primary" role="alert">
+        Your Name must have between 10 and 100 characters.
+      </div>
+
+      <label for="inputName" class="sr-only">Your Name</label>
+        <span class="float-right" id="count1">0</span>
+          <input onkeyup="count(this);" type="text" id="inputname" class="form-control tool mb-3 name" placeholder="Your Name" required autofocus>
+
+      <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+        
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="fluidPage();">Confirm</button>
+    </form>
+
+    <footer class="mt-auto">
+    	<div class="inner">
+    		<p>November 2018</p>
+    	</div>
+    </footer>
+  </div>
+   
+   <!--Right window-->
+   <div class="block1">
+    <header class="w-200 h-100">
+        <div class="inner">
+            <nav class="nav nav-pills float-right">
+              <li class="nav-item">
+                <a class="nav-link" onclick="fluidPageLeft();" href="#"><< CLICK ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hello!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How are you?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Always fine! :)</a>
+              </li>
+            </nav>
+        </div>
+    </header>
+
+    <section class="w-200 h-100">
+		  <h1 class="mb-5 pt-5 font-weight-normal">Policies</h1>
+		  <p>Veuillez accepter les conditions d'utilisation avant de poursuivre.</p>
+
+  		<div class="custom-control custom-checkbox">
+    			<input type="checkbox" class="custom-control-input" id="customCheck1">
+    			 <label class="custom-control-label" for="customCheck1">J'accepte</label>
+  		</div>
+
+  		<button type="button" class="btn btn-lg btn-primary btn-block" data-dismiss="alert" id="Mysubmit" value="Confirm" onclick="alert();">Confirm</button>
+
+<!--Modal content-->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Welcome! We are happy to know you!</h2>
+    </div>
+    <div class="modal-body">
+      <p>Maybe you don't know me but I hope you like to be here with us.</p>  
+    </div>
+    <div class="modal-footer">
+      <h3>See you next time!</h3> 
+    </div>
+  </div>
+</div>
+    </section>
+  </div>
+
+<!--Script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+      
+      </div>
+    </div>
+  </body>
+</html>
